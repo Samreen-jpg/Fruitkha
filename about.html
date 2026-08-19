@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fruitkha</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/about.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img class="img-fluid" src="./images/logo.png" alt="logo" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto gap-3 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Pages
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">About</a></li>
+            <li><a class="dropdown-item" href="#">Cart</a></li>
+            <li><a class="dropdown-item" href="#">Check out</a></li>
+            <li><a class="dropdown-item" href="#">Contact</a></li>
+            <li><a class="dropdown-item" href="#">Shop</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            News
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">News</a></li>
+            <li><a class="dropdown-item" href="#">Single News</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Shop
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Check out</a></li>
+            <li><a class="dropdown-item" href="#">Cart</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="nav-icons d-flex gap-4">
+        <a href="#"><i class="ri-shopping-cart-2-fill"></i></a>
+        <a href="#"><i class="ri-search-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</nav>
+<header>
+    <div class="header-bg-about text-center">
+
+        <p>we sale fresh fruits</p>
+        <h1>About us</h1>
+
+    </div>
+</header>
+<section id="why-fruitkha">
+  <div class="container">
+    <div class="row align-items-center"> <!-- Added align-items-center for vertical alignment -->
+      
+      <!-- Left Content Column -->
+      <div class="why-fruit-desc col-lg-12 col-xl-6 mb-4">
+        <h2 class="why-fruit-heading mb-4">Why <span>FruitKha</span></h2>
+        
+        <div class="row g-4"> <!-- Using Bootstrap's native gutter spacing -->
+          <!-- Feature 1 -->
+          <div class="col-md-6 d-flex gap-3">
+            <div class="why-main-logo d-flex justify-content-center align-items-center">
+              <i class="ri-truck-fill d-flex justify-content-center align-items-center"></i>
+            </div>
+            <div class="why-main-desc">
+              <h2>Home delivery</h2>
+              <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam.</p>
+            </div>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="col-md-6 d-flex gap-3">
+            <div class="why-main-logo d-flex justify-content-center align-items-center">
+              <i class="ri-loop-right-line d-flex justify-content-center align-items-center"></i>
+            </div>
+            <div class="why-main-desc">
+              <h2>Quick Refund</h2>
+              <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam.</p>
+            </div>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="col-md-6 d-flex gap-3">
+            <div class="why-main-logo d-flex justify-content-center align-items-center">
+              <i class="ri-money-dollar-box-fill d-flex justify-content-center align-items-center"></i>
+            </div>
+            <div class="why-main-desc">
+              <h2>Best Price</h2>
+              <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam.</p>
+            </div>
+          </div>
+          
+          <!-- Feature 4 -->
+          <div class="col-md-6 d-flex gap-3">
+            <div class="why-main-logo d-flex justify-content-center align-items-center">
+              <i class="ri-briefcase-fill d-flex justify-content-center align-items-center"></i>
+            </div>
+            <div class="why-main-desc">
+              <h2>Custom Box</h2>
+              <p>sit voluptatem accusantium dolore mque laudantium, totam rem aperiam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right Image Column -->
+      <div class="feature-bg col-lg-12 col-xl-6 mb-4">
+        <img src="./images/feature-bg.jpg" alt="FruitKha Features" class="img-fluid w-100 rounded object-fit-cover" >
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="sale-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-8 col-12">
+            <h1 class="banner-title">
+              December sale is on!<br />
+              with big <span class="text-orange">Discount...</span>
+            </h1>
+
+            <div class="discount-container">
+              <div class="discount-label">Sale!<br />Upto</div>
+
+              <div class="discount-percentage">50%</div>
+
+              <div class="discount-off">off</div>
+            </div>
+
+            <a href="#" class="btn-orange"> Shop Now </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script>
+  window.addEventListener('scroll', function () {
+    var nav = document.querySelector('.custom-navbar');
+    
+    // Agar page 50px se zyada neche scroll ho chuka ho
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
+  </body>
+</html>
+
+</body>
+</html>
