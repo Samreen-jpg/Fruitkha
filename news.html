@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cart</title>
+    <title>Fruitkha</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
@@ -12,7 +12,7 @@
     <link href="./css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/news.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
@@ -37,7 +37,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
+          <a class="nav-link" href="./about.html">About</a>
         </li>
         <li class="nav-item dropdown">
           <a
@@ -50,8 +50,8 @@
             Pages
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="about.html">About</a></li>
-            <li><a class="dropdown-item" href="#">Cart</a></li>
+            <li><a class="dropdown-item" href="./about.html">About</a></li>
+            <li><a class="dropdown-item" href="cart.html">Cart</a></li>
             <li><a class="dropdown-item" href="#">Check out</a></li>
             <li><a class="dropdown-item" href="#">Contact</a></li>
             <li><a class="dropdown-item" href="#">Shop</a></li>
@@ -68,7 +68,7 @@
             News
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">News</a></li>
+            <li><a class="dropdown-item" href="news.html">News</a></li>
             <li><a class="dropdown-item" href="#">Single News</a></li>
           </ul>
         </li>
@@ -87,7 +87,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">Check out</a></li>
-            <li><a class="dropdown-item" href="#">Cart</a></li>
+            <li><a class="dropdown-item" href="./cart.html">Cart</a></li>
           </ul>
         </li>
       </ul>
@@ -101,110 +101,163 @@
 <header>
     <div class="header-bg-about text-center">
 
-        <p>Fresh and Organic</p>
-        <h1>Cart</h1>
+        <p>organic information</p>
+        <h1>News Article</h1>
 
     </div>
 </header>
 
-<div class="cart-wrapper">
-    
-    <!-- Left Column: Item Specifications Table Container -->
-    <div class="cart-table-section">
-      <table class="cart-table">
-        <thead>
-          <tr>
-            <th></th>
-            <th>Product Image</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Row Item 1: Strawberry -->
-          <tr>
-            <td><button class="delete-btn">×</button></td>
-            <td><img src="./images/product-img-1.jpg" alt="Strawberry" class="product-img"></td>
-            <td>Strawberry</td>
-            <td>$85</td>
-            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-            <td>1</td>
-          </tr>
-          <!-- Row Item 2: Berry -->
-          <tr>
-            <td><button class="delete-btn">×</button></td>
-            <td><img src="./images/product-img-2.jpg" alt="Berry" class="product-img"></td>
-            <td>Berry</td>
-            <td>$70</td>
-            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-            <td>1</td>
-          </tr>
-          <!-- Row Item 3: Lemon -->
-          <tr>
-            <td><button class="delete-btn">×</button></td>
-            <td><img src="./images/product-img-3.jpg" alt="Lemon" class="product-img"></td>
-            <td>Lemon</td>
-            <td>$35</td>
-            <td><input type="number" class="quantity-input" value="0" min="0"></td>
-            <td>1</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
 
-    <!-- Right Column: Card Totals and Voucher Actions Panel -->
-    <div class="summary-sidebar">
+
+  <div class="container py-5">
+    <div class="row g-4">
       
-      <!-- Summary Value Aggregation Grid -->
-      <div class="summary-card">
-        <table class="summary-table">
-          <thead>
-            <tr>
-              <th style="width: 50%;">Total</th>
-              <th style="width: 50%; text-align: right;">Price</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="summary-label">Subtotal:</td>
-              <td class="summary-value">$500</td>
-            </tr>
-            <tr>
-              <td class="summary-label">Shipping:</td>
-              <td class="summary-value">$45</td>
-            </tr>
-            <tr>
-              <td class="summary-label">Total:</td>
-              <td class="summary-value" style="font-weight: bold;">$545</td>
-            </tr>
-          </tbody>
-        </table>
+      <!-- Row 1 - Card 1 -->
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="./images/news-bg-1.jpg" class="card-img-top" alt="Strawberries">
+          <div class="card-body">
+            <h5>You will vainly look for fruit on it in autumn.</h5>
+            <div class="blog-meta">
+              <span><i class="ri-user-fill"></i> Admin</span>
+              <span><i class="ri-calendar-fill"></i> 27 December, 2019</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+            <a href="#" class="read-more">read more <i class="ri-arrow-drop-right-line"></i
+                ></a>
+          </div>
+        </div>
       </div>
 
-      <!-- Main Action Buttons Navigation Wrapper -->
-      <div class="action-buttons-row">
-        <button class="btn-orange">Update Cart</button>
-        <button class="btn-orange">Check Out</button>
+      <!-- Row 1 - Card 2 -->
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="./images/news-bg-2.jpg" class="card-img-top" alt="Fruit bowl">
+          <div class="card-body">
+            <h5>A man's worth has its season, like tomato.</h5>
+            <div class="blog-meta">
+              <span><i class="ri-user-fill"></i>Admin</span>
+              <span><i class="ri-calendar-fill"></i> 27 December, 2019</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+            <a href="#" class="read-more">read more <i class="ri-arrow-drop-right-line"></i
+                ></a>
+          </div>
+        </div>
       </div>
 
-      <!-- Voucher Promo Code Box Field Panel -->
-      <div class="coupon-box">
-        <h3>Apply Coupon</h3>
-        <input type="text" class="coupon-input" placeholder="Coupon">
-        <button class="btn-coupon-apply">Apply</button>
+      <!-- Row 1 - Card 3 -->
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="./images/news-bg-3.jpg" class="card-img-top" alt="Grapes">
+          <div class="card-body">
+            <h5>Good thoughts bear good fresh juicy fruit.</h5>
+            <div class="blog-meta">
+              <span><i class="ri-user-fill"></i> Admin</span>
+              <span><i class="ri-calendar-fill"></i> 27 December, 2019</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+            <a href="#" class="read-more">read more <i class="ri-arrow-drop-right-line"></i
+                ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 - Card 1 -->
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="./images/news-bg-4.jpg" class="card-img-top" alt="Apples">
+          <div class="card-body">
+            <h5>Fall in love with the fresh orange</h5>
+            <div class="blog-meta">
+              <span><i class="ri-user-fill"></i> Admin</span>
+              <span><i class="ri-calendar-fill"></i> 27 December, 2019</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+            <a href="#" class="read-more">read more <i class="ri-arrow-drop-right-line"></i
+                ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 - Card 2 -->
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="./images/news-bg-5.jpg" class="card-img-top" alt="Fruit market">
+          <div class="card-body">
+            <h5>Why the berries always look delecious</h5>
+            <div class="blog-meta">
+              <span><i class="ri-user-fill"></i> Admin</span>
+              <span><i class="ri-calendar-fill"></i> 27 December, 2019</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+            <a href="#" class="read-more">read more <i class="ri-arrow-drop-right-line"></i
+                ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 - Card 3 -->
+      <div class="col-md-4">
+        <div class="card blog-card">
+          <img src="./images/news-bg-6.jpg" class="card-img-top" alt="Green grapes">
+          <div class="card-body">
+            <h5>Love for fruits are genuine of John Doe</h5>
+            <div class="blog-meta">
+              <span><i class="ri-user-fill"></i>Admin</span>
+              <span><i class="ri-calendar-fill"></i> 27 December, 2018</span>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus laborum autem, dolores inventore, beatae nam.</p>
+            <a href="#" class="read-more">read more <i class="ri-arrow-drop-right-line"></i
+                ></a>
+          </div>
+        </div>
       </div>
 
     </div>
+  </div>
 
+    <div class="container py-5 d-flex justify-content-center">
+    <nav>
+      <ul class="pagination custom-pagination">
+        
+        <!-- Prev Button -->
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Previous">Prev</a>
+        </li>
+
+        <!-- Page Numbers -->
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+
+        <!-- Next Button -->
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">Next</a>
+        </li>
+
+      </ul>
+    </nav>
   </div>
 
 
 
 
 
-     <section
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section
       class="logo-carousel-section py-5"
       style="background-color: #f5f5f5"
     >
@@ -303,7 +356,7 @@
               </li>
 
               <li>
-                <a href="about.html">
+                <a href="#">
                   <i class="ri-arrow-right-s-line"></i>
                   About
                 </a>
@@ -399,13 +452,6 @@
         </div>
       </div>
     </footer>
-
-
-
-
-
-
-    
     <script src="./js/bootstrap.bundle.js"></script>
     <script>
   window.addEventListener('scroll', function () {
@@ -421,7 +467,4 @@
 </script>
 
   </body>
-</html>
-
-</body>
 </html>
